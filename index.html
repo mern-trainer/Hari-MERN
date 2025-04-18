@@ -28,5 +28,89 @@
         <video src="./assets/homepage-hero-video-desktop-21x9.webm" muted autoplay loop controls width="600" ></video> -->
         <!-- Audio -->
         <audio src="./audio.mp3" controls muted autoplay loop></audio>
+
+        <!-- Link, list, form -->
+
+        <a href="https://www.google.com/" target="_blank">Link to google</a>
+        <a href="./about.html">Link to about</a>
+        <!-- <button> -->
+            <a href="./about.html">
+                <button>Link to about</button>
+            </a>
+        <!-- </button> -->
+
+        <!-- list -->
+
+        <!-- 1. Ordered List --> 1, A, a, I
+        <ol type="A">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ol>
+         <!-- 2. Unordered List -->
+          <ul type="square">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+          <!-- 3. Description List -->
+          <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JavaScript</dt>
+            <dd>Programming Language Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta error porro voluptatum voluptatibus reprehenderit autem, iure fugit a suscipit, alias temporibus nisi quidem. Voluptates earum quisquam repellendus veniam praesentium dignissimos.</dd>
+          </dl>
+
+          <!-- Nexted List -->
+
+          <ol>
+            <li>What is HTML?</li>
+            <ol type="A">
+                <li>HTML is a markup language</li>
+                <ol>
+                    <li>HTML is used to create web pages</li>
+                    <li>HTML is a standard markup language</li>
+                    <li>HTML is a language for describing the structure of web pages</li>
+                </ol>
+                <li>HTML is used to create web pages</li>
+                <li>HTML is a standard markup language</li>
+                <li>HTML is a language for describing the structure of web pages</li>
+            </ol>
+            <li>What is CSS?</li>
+            <ul>
+                <li>CSS is a style sheet language</li>
+                <ul>
+                    <li>CSS is used to style web pages</li>
+                    <li>CSS is a standard style sheet language</li>
+                    <li>CSS is a language for describing the presentation of web pages</li>
+                </ul>
+                <li>CSS is used to style web pages</li>
+                <li>CSS is a standard style sheet language</li>
+                <li>CSS is a language for describing the presentation of web pages</li>
+            </ul>
+          </ol>
+
+          <!-- form -->
+
+          <form action="./about.html">
+            <input type="checkbox" name="first_name" placeholder="Enter your name" value="1">1
+            <input type="checkbox" name="first_name" placeholder="Enter your name">2
+            <input type="checkbox" name="first_name" placeholder="Enter your name">3
+            <input type="checkbox" name="first_name" placeholder="Enter your name">4
+
+            <label for="gender">Gender</label>
+            <input type="hidden" id="gender" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+
+
+
+            <button>Submit</button>
+          </form>
+
+          <!-- semantic elements -->
     </body>
 </html>
