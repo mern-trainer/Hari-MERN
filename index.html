@@ -5,12 +5,63 @@
         <title>Hey</title>
         <!-- favicon -->
          <link rel="icon" type="image/png" href="./icon.png">
+         <style>
+            /* 
+              univeral selector
+              element selector
+              class selector
+              id selector
+              combination selector
+              group selector
+            */
+            h1{
+              color: blue;
+              background-color: black;
+            }
+            .demo{
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: yellow;
+            }
+            #hello{
+              color: red;
+              background-color: black;
+            }
+            .container p{
+              color: gray;
+            }
+            /* .box_1{
+              width: 200px;
+              height: 200px;
+              background-color: red;
+            }
+            .box_2{
+              width: 200px;
+              height: 200px;
+              background-color: blue;
+            } */
+             .box_1, .box_2{
+               width: 200px;
+               height: 200px;
+             }
+              .box_1{
+                background-color: red;
+              }
+              .box_2{
+                background-color: blue;
+              }
+         </style>
     </head>
     <body>
+      <div class="container">
+        <p>hey</p>
+      </div>
+
+      <div class="box_1">1</div>
+      <div class="box_2">2</div>
         <!-- Heading -->
         <h1>Hello</h1>
-        <h2>Goodbye</h2>
-        <h3>Hello</h3>
+        <h2 class="demo">Goodbye</h2>
+        <h3 id="hello">Hello</h3>
         <h4>Goodbye</h4>
         <h5>Hello</h5>
         <h6>Goodbye</h6>
@@ -132,9 +183,15 @@
            <!-- 2. Internal CSS -->
             <!-- 3. External CSS -->
 
-            <div>
+            <!-- <div>
               <h2 style="color: red; background-color: black; padding: 20px; margin: 40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Hello</h2>
               <p style="color: green; font-family: cursive; font-weight: 600; font-size: 16px; font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea architecto impedit distinctio quaerat dolore, autem ducimus placeat eligendi tempora deleniti! Veritatis, illo facere accusamus consequatur eveniet ipsam dolorum libero.</p>
+            </div> -->
+            <div>
+              <h1>Hello World</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta corrupti sunt ipsum accusamus non optio iusto dolore porro repellendus! Aliquid, culpa possimus voluptates voluptas natus excepturi voluptate sequi sed laudantium!
+              Sint natus pariatur itaque, mollitia iusto quae officia quidem, sed nisi tenetur laudantium! Consequatur doloribus ab expedita autem libero aspernatur dolorem eligendi suscipit, perspiciatis numquam. Ratione totam quasi itaque consequuntur?
+              Iusto at id sunt rem, aperiam accusantium consectetur nulla ex? Nobis, sint! Quasi est quibusdam corrupti ipsam vero nulla id, aut labore voluptatum dolor tempore iste laboriosam quas quam ratione.</p>
             </div>
     </body>
 </html>
