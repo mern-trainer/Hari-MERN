@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+
+.container{
+    background-color: red;
+}
+
+/* border */
+
+.container_1{
+    background-color: aqua;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    /* border-width: 5px;
+    border-color: red;
+    border-style: solid; */
+    border: 5px double gray;
+    border-radius: 200px;
+}
+
+/* display properties */
+
+/* inline, inline-block, block, flex, grid */
+
+.display_container{
+    /* display: inline-block;
+    background-color: red;
+    height: 100px; */
+
+
+}
+
+.flex_container{
+    display: flex;
+    gap: 5px;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+}
+
+.flex_container div{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
