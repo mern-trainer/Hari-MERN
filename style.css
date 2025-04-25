@@ -77,3 +77,13 @@
     position: relative;
     margin-top: 100px;
 }
+
+.sticky_container{
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 20px;
+}
