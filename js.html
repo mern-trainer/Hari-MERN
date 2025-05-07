@@ -1,0 +1,79 @@
+<!-- JavaScript -> is a scripting language for creating dynamic and interactive web pages -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // variable -> container for storing data
+        // identifier -> name of the variable
+        // keywords -> reserved words in js
+        // datatypes -> string, number, boolean, null, undefined, object
+
+        // string -> sequence of characters or collection of characters
+
+        // variables
+
+        // let, const, var -> keywords
+
+        var name = "Hari";
+        console.log(name);
+        name = 20
+        console.log(name);
+
+        // var -> re-declaration and re-assignment
+
+        // let -> re-declaration is not allowed, re-assignment is allowed
+
+        let age = 20;
+        console.log(age);
+        age = "Hello";
+        console.log(age);
+
+        // const -> re-declaration is not allowed, re-assignment is not allowed
+
+        // const gender = "Male";
+        // console.log(gender);
+        // gender = "Female"; // Error -> assignment to constant variable
+        // console.log(gender);
+
+        // Functions -> Block of code or set of instructions to perform a specific task.
+
+        // function display(){
+        //     console.log("Function invoked");
+        // }
+
+        // display();
+
+        // arithmatic operators -> +, -, *, /, %, ++, --
+
+        function sumOfNNumbers(n){
+            const sum = (n * (n + 1)) / 2;
+            return sum;
+        }
+
+        const res1 = sumOfNNumbers(10);
+        console.log(res1);
+        const res2 = sumOfNNumbers(100);
+        console.log(res2);
+        const res3 = sumOfNNumbers(10000);
+        console.log(res3);
+
+        // conditional statements -> if, else, else if
+        // comparison operators -> ==, ===, !=, !==, >, <, >=, <=
+
+        function getMonth(n){
+            if(n == 1){
+                return console.log("January");
+            }
+            console.log("Invalid");
+        }
+
+        getMonth(1)
+    </script>
+</body>
+</html>
