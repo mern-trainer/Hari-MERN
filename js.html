@@ -2,11 +2,13 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // variable -> container for storing data
@@ -51,7 +53,7 @@
 
         // arithmatic operators -> +, -, *, /, %, ++, --
 
-        function sumOfNNumbers(n){
+        function sumOfNNumbers(n) {
             const sum = (n * (n + 1)) / 2;
             return sum;
         }
@@ -66,14 +68,110 @@
         // conditional statements -> if, else, else if
         // comparison operators -> ==, ===, !=, !==, >, <, >=, <=
 
-        function getMonth(n){
-            if(n == 1){
-                return console.log("January");
+        function getMonth(n) {
+            if (n == 1) {
+                console.log("January");
+            } else if (n == 2) {
+                console.log("February");
+            } else if (n == 3) {
+                console.log("March");
+            } else {
+                console.log("Invalid Month");
             }
-            console.log("Invalid");
         }
 
-        getMonth(1)
+        getMonth(3)
+
+        // switch
+
+        const day = 3;
+        switch (day) {
+            case 1:
+                console.log("Sunday");
+                break;
+            case 2:
+                console.log("Monday");
+                break;
+            case 3:
+                console.log("Tuesday");
+                break;
+            case 4:
+                console.log("Wednesday");
+                break;
+            case 5:
+                console.log("Thursday");
+                break;
+            case 6:
+                console.log("Friday");
+                break;
+            case 7:
+                console.log("Saturday");
+                break;
+            default:
+                console.log("Invalid day");
+                break;
+        }
+
+        // loops -> for, while, do while -> to repeat a block of code until a certain condition is met.
+
+        // for loop
+
+        // let k = 0;
+        // let p = 0;
+        // let l = k++
+        // console.log(k);
+        // let m = ++p
+        // console.log(l, m);
+
+        // i++ // post increment
+        // ++i // pre increment
+        // i-- // post decrement
+        // --i // pre decrement
+
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+        // while loop -> entry controlled loop
+        let k = 0;
+        while (true) {
+            if (k == 10) {
+                break;
+            }
+            console.log(k);
+            k++;
+        }
+
+        function sample() {
+            let a = 0;
+            while (true) {
+                if (a == 10) {
+                    return a;
+                }
+                a++;
+            }
+        }
+
+        const res = sample();
+        console.log(res);
+        let s = 0;
+        do {
+            console.log(s);
+            s++;
+        } while (s < 0); // exit controlled loop
+
+        // sum of n numbers
+
+        function sumOfNaturalNumbers(n) {
+            let sum = 0;
+            for (let i = 1; i <= n; i++) {
+                sum = sum + i;
+            }
+            return sum;
+        }
+
+        console.log(sumOfNaturalNumbers(10));
     </script>
 </body>
+
 </html>
