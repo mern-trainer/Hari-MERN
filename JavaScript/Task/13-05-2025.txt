@@ -1,0 +1,6 @@
+1. Hide mobile number using slice method
+    Eg: 89xxxxxx98
+2. Hide email using slice, split and join
+    Eg: Alex******@gmail.com
+3. Print even numbers from give list.
+4. reverse a string
