@@ -1,0 +1,17 @@
+1. Create a student registration form with the following requirements:
+   - Form should include fields for:
+     * Student name
+     * Email address  
+     * Phone number
+     * Date of birth
+     * Gender
+     * Course selection
+     * Address
+   - Implement client-side validation for:
+     * Required field checks
+     * Length checks
+     * Email format validation
+     * Phone number format (10 digits)
+     * Age verification (must be at least 15 years old)
+   - Display appropriate error messages for invalid inputs
+   - Use HTML5 form validation and JavaScript for custom validation logic
