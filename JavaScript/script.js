@@ -109,73 +109,164 @@
 // same properties and methods of getElementsByTagName or getElementsByClassName
 
 // form validation
-const error = document.querySelectorAll(".error")
+// const error = document.querySelectorAll(".error")
 
-function clearError() {
-    for (let i = 0; i < error.length; i++){
-        error[i].innerHTML = ""
+// function clearError() {
+//     for (let i = 0; i < error.length; i++){
+//         error[i].innerHTML = ""
+//     }
+// }
+
+// function handleForm() {
+//     // const name = document.getElementById("name").value
+//     // const username = document.getElementById("username").value
+//     // const number = document.getElementById("number").value
+//     // const password = document.getElementById("password").value
+//     // const confirm_password = document.getElementById("confirmPassword").value
+//     const name = document.signup.name.value
+//     const username = document.signup.username.value
+//     const number = document.signup.number.value
+//     const password = document.signup.password.value
+//     const confirm_password = document.signup.confirmPassword.value
+
+//     console.log(error);
+//     if(name == ""){
+//         // alert("Please fill all the fields")
+//         error[0].innerHTML = "Name is required"
+//         return false
+//     }
+//     if (name.length < 4 || name.length > 20) {
+//         // alert("Name must be between 4 and 20 characters")
+//         error[0].innerHTML = "Name must be between 4 and 20 characters"
+//         return false
+//     }
+//     if (username == "") {
+//         // alert("Please fill all the fields")
+//         error[1].innerHTML = "Username is required"
+//         return false
+//     }
+//     if (username.length < 4 || username.length > 16) {
+//         // alert("Username must be between 4 and 16 characters")
+//         error[1].innerHTML = "Username must be between 4 and 16 characters"
+//         return false
+//     }
+//     if (number == "") {
+//         error[2].innerHTML = "Number is required"
+//         return false
+//     }
+//     if (number.length != 10) {
+//         // alert("Number must be 10 digits")
+//         error[2].innerHTML = "Number must be 10 digit"
+//         return false
+//     }
+//     if (password == "") {
+//         error[3].innerHTML = "Password is required"
+//         return false
+//     }
+//     if (password.length < 8 || password.length > 16) {
+//         // alert("Password must be between 8 and 16 characters")
+//         error[3].innerHTML = "Password must be between 8 and 16 characters"
+//         return false
+//     }
+//     if (confirm_password == "") {
+//         error[4].innerHTML = "Confirm password is required"
+//         return false
+//     }
+//     if (password != confirm_password) {
+//         // alert("Password and Confirm Password must be same")
+//         error[4].innerHTML = "Password and Confirm Password must be same"
+//         return false
+//     }
+//     return false
+// }
+
+// oops -> object oriented programing system
+
+// class -> Template of objects
+// object -> Instance of class
+// contructor function ->
+// properties ->
+// methods ->
+// this keyword -> current object
+
+// camel case -> firstName
+// pascal case -> FirstName
+// snake case -> first_name
+
+// const obj = {}
+
+// obj.age = 25
+
+// console.log(obj);
+
+class Person{
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+    display(value) {
+        return value
+    }
+    displayUser() {
+
+        console.log(this.name, this.age);
     }
 }
 
-function handleForm() {
-    // const name = document.getElementById("name").value 
-    // const username = document.getElementById("username").value 
-    // const number = document.getElementById("number").value
-    // const password = document.getElementById("password").value
-    // const confirm_password = document.getElementById("confirmPassword").value
-    const name = document.signup.name.value
-    const username = document.signup.username.value
-    const number = document.signup.number.value
-    const password = document.signup.password.value
-    const confirm_password = document.signup.confirmPassword.value
+const obj1 = new Person("Aswin", 20) //  memory allocation
 
-    console.log(error);
-    if(name == ""){
-        // alert("Please fill all the fields")
-        error[0].innerHTML = "Name is required"
-        return false
+// obj1.displayUser()
+
+// const obj2 = new Person("Amal", 22)
+
+// obj2.displayUser()
+
+// 4 pillers
+
+// 1. Encapsulation -> Binding of data into a single unit.
+// 2. Abstraction -> Hiding of implementation details.
+// 3. Inheritance -> Inheriting properties and methods from parent class.
+// 4. Polymorphism -> Ability to take multiple forms. [method overloading, method overriding]
+    // method overloading -> same method name with different parameters.
+// method overriding -> same method name with same parameters.
+    
+// class Vehicle{
+//     constructor(name, color, year) {
+//         this.name = name
+//         this.color = color
+//         this.year = year
+//     }
+//     display() {
+//         console.log(this.name, this.color, this.year);
+//     }
+// }
+
+// class Sample extends Vehicle {
+
+// }
+
+// const veh = new Sample("BMW", "Black", 2020)
+
+// veh.display()
+
+class Vehicle {
+    constructor(name, color, year) {
+        this.name = name
+        this.color = color
+        this.year = year
     }
-    if (name.length < 4 || name.length > 20) {
-        // alert("Name must be between 4 and 20 characters")
-        error[0].innerHTML = "Name must be between 4 and 20 characters"
-        return false
+    display(a) {
+        console.log(this.name, this.color, this.year, a);
     }
-    if (username == "") {
-        // alert("Please fill all the fields")
-        error[1].innerHTML = "Username is required"
-        return false
-    }
-    if (username.length < 4 || username.length > 16) {
-        // alert("Username must be between 4 and 16 characters")
-        error[1].innerHTML = "Username must be between 4 and 16 characters"
-        return false
-    }
-    if (number == "") {
-        error[2].innerHTML = "Number is required"
-        return false
-    }
-    if (number.length != 10) {
-        // alert("Number must be 10 digits")
-        error[2].innerHTML = "Number must be 10 digit"
-        return false
-    }
-    if (password == "") {
-        error[3].innerHTML = "Password is required"
-        return false
-    }
-    if (password.length < 8 || password.length > 16) {
-        // alert("Password must be between 8 and 16 characters")
-        error[3].innerHTML = "Password must be between 8 and 16 characters"
-        return false
-    }
-    if (confirm_password == "") {
-        error[4].innerHTML = "Confirm password is required"
-        return false
-    }
-    if (password != confirm_password) {
-        // alert("Password and Confirm Password must be same")
-        error[4].innerHTML = "Password and Confirm Password must be same"
-        return false
-    }
-    return false
 }
+
+class Sample extends Vehicle {
+    display(a, b) {
+        super.display(a)
+        console.log("Hello", a, b);
+    }
+}
+
+const veh = new Sample("BMW", "Black", 2020)
+
+veh.display(10)
