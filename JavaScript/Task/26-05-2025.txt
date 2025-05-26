@@ -1,0 +1,23 @@
+Task: Create a Random Joke Generator Web Application
+
+Requirements:
+1. Use the JokeAPI (https://v2.jokeapi.dev/joke/Any) to fetch random jokes
+2. Create a responsive web interface that displays the jokes
+3. Add styling using CSS to make it visually appealing
+4. Generate and display a new joke each time the page loads
+5. Implement error handling for API requests
+6. Make the interface user-friendly and accessible
+
+Task: Create a Product Listing Web Application
+
+Requirements:
+1. Use the DummyJSON API (https://dummyjson.com/products) to fetch product data
+2. Create a responsive product grid/list that displays:
+   - Product images
+   - Product titles
+   - Product prices
+3. Style the product listing using CSS to make it visually appealing:
+   - Implement a grid or flexbox layout
+   - Add hover effects
+   - Ensure responsive design for different screen sizes
+4. Implement proper error handling for API requests
