@@ -1,0 +1,18 @@
+What is ReactJS -> JavaScript library for creating user interfaces (UI).
+SPA -> Single Page Applications
+
+Features
+--------------
+1. JSX -> JavaScript XML -> HTML like syntax -> 
+2. Unidirectional data flow -> parent to child 
+3. Virtual DOM -> Performance
+4. Beginner friendly
+
+library -> supporting 
+framework -> Template
+
+Virtual DOM -> Actual DOM -> Reconcilation
+
+installation
+
+NodeJS, npm -> 
