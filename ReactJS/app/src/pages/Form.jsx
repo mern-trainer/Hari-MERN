@@ -5,7 +5,6 @@ export const Form = () => {
     const [list, setList] = useState([])
     const [hide, setHide] = useState(true)
     const handleSubmit = () => {
-        // console.log(input)
         setList([...list, input])
         setInput("")
     }
@@ -15,7 +14,6 @@ export const Form = () => {
         }} />
         <button onClick={handleSubmit}>Submit</button>
         {list.join(", ")}
-
         <input type={hide ? "password" : "text"} />
         <button onClick={() => setHide(h => !h)}>{hide ? "show" : "hide"}</button>
     </div>
