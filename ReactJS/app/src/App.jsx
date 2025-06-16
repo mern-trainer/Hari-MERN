@@ -1,7 +1,7 @@
-import { Form } from "./pages/Form";
+import TodoList from "./pages/TodoList";
 
 const App = () => {
-    return <Form />
+    return <TodoList />
 }
 
 export default App;
