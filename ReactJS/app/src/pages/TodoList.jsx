@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react"
 import { toast } from "react-toastify"
 import { CiCircleCheck } from "react-icons/ci";
+import { Link } from "react-router";
 
 const TodoList = () => {
 
@@ -63,7 +64,8 @@ const TodoList = () => {
     }
 
     return <div className="d-flex flex-column align-items-center justify-content-center">
-        <form onSubmit={handleSubmit} className="w-100 d-flex gap-2 flex-column mt-2" style={{maxWidth: "500px"}}>
+        <Link to="/parent" className="btn btn-primary">Parent Component</Link>
+        <form onSubmit={handleSubmit} className="w-100 d-flex gap-2 flex-column mt-2" style={{ maxWidth: "500px" }}>
             <label htmlFor="">Enter Task:</label>
             <input type="text" name="todo" placeholder="Eg: Buy something..." className="border border-2 p-2 outline-none" value={todo} onChange={handleChange} />
             <button className="btn btn-secondary rounded-0">Add Task</button>
