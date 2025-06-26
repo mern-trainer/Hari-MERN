@@ -2,7 +2,7 @@ import { Fragment, useContext, useState } from "react"
 import { toast } from "react-toastify"
 import { CiCircleCheck } from "react-icons/ci";
 import { Link } from "react-router";
-import { Context } from "../App";
+import { CounterContext } from "../context/CounterProvider";
 
 const TodoList = () => {
 
@@ -10,9 +10,9 @@ const TodoList = () => {
     const [todoList, setTodoList] = useState([])
     const [editableTask, setEditableTask] = useState(null)
     const [editTask, setEditTask] = useState("")
-    const user = useContext(Context)
+    const { counter, setCounter } = useContext(CounterContext)
 
-    console.log(user)
+    
 
     const handleChange = (event) => {
         setTodo(event.target.value)
@@ -69,6 +69,10 @@ const TodoList = () => {
 
     return <div className="d-flex flex-column align-items-center justify-content-center">
         <Link to="/parent" className="btn btn-primary">Parent Component</Link>
+        <div>
+            <div>{counter}</div>
+            <button onClick={() => setCounter(c => c + 1)}>Update</button>
+        </div>
         <form onSubmit={handleSubmit} className="w-100 d-flex gap-2 flex-column mt-2" style={{ maxWidth: "500px" }}>
             <label htmlFor="">Enter Task:</label>
             <input type="text" name="todo" placeholder="Eg: Buy something..." className="border border-2 p-2 outline-none" value={todo} onChange={handleChange} />

@@ -1,19 +1,15 @@
 import { useContext, useState } from "react";
-import { Context } from "../App";
+import { CounterContext } from "../context/CounterProvider";
+import { Link } from "react-router";
 
 export const State = () => {
 
-    const [counter, setCounter] = useState(0)
+    // const [counter, setCounter] = useState(0)
     const [username, setUsername] = useState("Alice")
-    const user = useContext(Context)
+    const { counter, setCounter } = useContext(CounterContext)
 
-    console.log(user)
 
     const handleAgeUpdate = () => {
-        setCounter((c) => c + 1)
-        setCounter((c) => c + 1)
-        setCounter((c) => c + 1)
-        setCounter((c) => c + 1)
         setCounter((c) => c + 1)
     }
 
@@ -33,5 +29,6 @@ export const State = () => {
         <button className="btn btn-primary" onClick={() => {
             setUsername(username == "Alice" ? "Alex" : "Alice")
         }}>Set username to {username == "Alice" ? "Alex" : "Alice"}</button>
+        <Link to={"/list"}>to todo</Link>
     </div>
 };

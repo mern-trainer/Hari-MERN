@@ -1,14 +1,10 @@
-import { createContext } from "react";
 import Router from "./Router";
-
-export const Context = createContext()
-
+import { CounterProvider } from "./context/CounterProvider";
 
 const App = () => {
-    const user = "John"
-    return <Context.Provider value={user}>
+    return <CounterProvider>
         <Router />
-    </Context.Provider>
+    </CounterProvider>
 }
 
 export default App;
