@@ -1,7 +1,8 @@
-import { Fragment, useState } from "react"
+import { Fragment, useContext, useState } from "react"
 import { toast } from "react-toastify"
 import { CiCircleCheck } from "react-icons/ci";
 import { Link } from "react-router";
+import { Context } from "../App";
 
 const TodoList = () => {
 
@@ -9,6 +10,9 @@ const TodoList = () => {
     const [todoList, setTodoList] = useState([])
     const [editableTask, setEditableTask] = useState(null)
     const [editTask, setEditTask] = useState("")
+    const user = useContext(Context)
+
+    console.log(user)
 
     const handleChange = (event) => {
         setTodo(event.target.value)

@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { Context } from "../App";
 
 export const State = () => {
+
     const [counter, setCounter] = useState(0)
     const [username, setUsername] = useState("Alice")
+    const user = useContext(Context)
+
+    console.log(user)
 
     const handleAgeUpdate = () => {
         setCounter((c) => c + 1)
