@@ -3,6 +3,9 @@ import TodoList from "./pages/TodoList"
 import ParentComponent from "./pages/ParentComponent"
 import { State } from "./pages/State"
 import Navigations from "./pages/Navigation"
+import Meet from "./pages/Meet"
+import Products from "./pages/Products"
+import ProductSingle from "./pages/ProductSingle"
 
 const Router = () => {
     return <BrowserRouter>
@@ -21,7 +24,14 @@ const Router = () => {
         <Routes>
             <Route path="/">
                 <Route path="list" Component={TodoList} />
-                <Route path="/navigation" Component={Navigations} />
+                <Route path="navigation" Component={Navigations} />
+                <Route path="meet">
+                    <Route path=":code?" Component={Meet} />
+                </Route>
+                <Route path="products">
+                    <Route path="" Component={Products} />
+                    <Route path=":id" Component={ProductSingle} />
+                </Route>
                 <Route path="state" Component={State} />
                 <Route path="parent" Component={ParentComponent} />
                 <Route path="sample" element={<div>Hello</div>} />
