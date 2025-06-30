@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router"
 import TodoList from "./pages/TodoList"
 import ParentComponent from "./pages/ParentComponent"
 import { State } from "./pages/State"
+import Navigations from "./pages/Navigation"
 
 const Router = () => {
     return <BrowserRouter>
@@ -20,6 +21,7 @@ const Router = () => {
         <Routes>
             <Route path="/">
                 <Route path="list" Component={TodoList} />
+                <Route path="/navigation" Component={Navigations} />
                 <Route path="state" Component={State} />
                 <Route path="parent" Component={ParentComponent} />
                 <Route path="sample" element={<div>Hello</div>} />
