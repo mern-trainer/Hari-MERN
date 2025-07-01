@@ -1,0 +1,15 @@
+Question: Create a React shopping cart application with the following features:
+
+Features Required:
+1. Product Display
+- Show products with images, names and prices
+- Grid/list view of all products
+- Add to cart functionality for each product
+
+2. Shopping Cart
+- View all items added to cart
+- Remove items from cart
+
+3. State Management  
+- Use Context API for cart state
+- Maintain products and cart data in the global state

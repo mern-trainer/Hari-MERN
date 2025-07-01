@@ -5,6 +5,7 @@ import { products } from '../constant/products'
 export const ProductSingle = () => {
     
     const { id } = useParams()
+    
     const [product, setProduct] = useState(products.find(e => e.id == id) || { title: "Product Not Found" })
 
     return <div>
